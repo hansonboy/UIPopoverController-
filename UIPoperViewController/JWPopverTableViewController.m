@@ -34,8 +34,11 @@
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
 //    [self dismissViewControllerAnimated:YES completion:nil];
 //    [self.popover dismissPopoverAnimated:YES];
-    extern NSString *JWPopoverShouldDismiss;
-    [[NSNotificationCenter defaultCenter]postNotificationName:JWPopoverShouldDismiss object:nil];
+//    extern NSString *JWPopoverShouldDismiss;
+//    [[NSNotificationCenter defaultCenter]postNotificationName:JWPopoverShouldDismiss object:nil];
+    if ([self.delegate respondsToSelector:@selector(popverTableViewControllerDidDismiss:)]) {
+        [self.delegate popverTableViewControllerDidDismiss:self];
+    }
     NSLog(@"%d--%@",indexPath.row,self.popoverPresentationController);
 }
 @end

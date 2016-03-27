@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class JWPopverTableViewController;
+@protocol JWPopverTableViewControllerDelegate <NSObject>
+
+-(void)popverTableViewControllerDidDismiss:(JWPopverTableViewController*)popverController;
+
+@end
 
 @interface JWPopverTableViewController : UITableViewController
+@property (weak,nonatomic) id<JWPopverTableViewControllerDelegate> delegate;
 @property (weak,nonatomic)UIPopoverController *popover;
 @end
