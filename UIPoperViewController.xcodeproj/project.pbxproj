@@ -15,6 +15,7 @@
 		CBA043641CA7FDAF0061FCB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA043621CA7FDAF0061FCB4 /* LaunchScreen.storyboard */; };
 		CBA0436F1CA7FDAF0061FCB4 /* UIPoperViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA0436E1CA7FDAF0061FCB4 /* UIPoperViewControllerTests.m */; };
 		CBA0437A1CA7FDAF0061FCB4 /* UIPoperViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA043791CA7FDAF0061FCB4 /* UIPoperViewControllerUITests.m */; };
+		CBA043891CA802CE0061FCB4 /* JWPopverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA043881CA802CE0061FCB4 /* JWPopverTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CBA043751CA7FDAF0061FCB4 /* UIPoperViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIPoperViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA043791CA7FDAF0061FCB4 /* UIPoperViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIPoperViewControllerUITests.m; sourceTree = "<group>"; };
 		CBA0437B1CA7FDAF0061FCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA043871CA802CE0061FCB4 /* JWPopverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWPopverTableViewController.h; sourceTree = "<group>"; };
+		CBA043881CA802CE0061FCB4 /* JWPopverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWPopverTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				CBA043621CA7FDAF0061FCB4 /* LaunchScreen.storyboard */,
 				CBA043651CA7FDAF0061FCB4 /* Info.plist */,
 				CBA043541CA7FDAF0061FCB4 /* Supporting Files */,
+				CBA043871CA802CE0061FCB4 /* JWPopverTableViewController.h */,
+				CBA043881CA802CE0061FCB4 /* JWPopverTableViewController.m */,
 			);
 			path = UIPoperViewController;
 			sourceTree = "<group>";
@@ -202,11 +207,13 @@
 		CBA043491CA7FDAF0061FCB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JW;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = JW;
 				TargetAttributes = {
 					CBA043501CA7FDAF0061FCB4 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JKYZTVH438;
 					};
 					CBA043691CA7FDAF0061FCB4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -270,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA043891CA802CE0061FCB4 /* JWPopverTableViewController.m in Sources */,
 				CBA0435C1CA7FDAF0061FCB4 /* ViewController.m in Sources */,
 				CBA043591CA7FDAF0061FCB4 /* AppDelegate.m in Sources */,
 				CBA043561CA7FDAF0061FCB4 /* main.m in Sources */,
@@ -413,10 +421,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UIPoperViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JW.UIPoperViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UIPoperViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JW.UIPoperViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
